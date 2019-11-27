@@ -2,6 +2,13 @@ package s3
 
 import "github.com/hashicorp/terraform-plugin-sdk/helper/schema"
 
+// ResourceTerratestAWSS3Bucket is a function that returns a terraform schema.Resource instance pointer
+//
+// Arguments:
+//     None
+//
+// Returns:
+//     (*schema.Resource): The pointer to the instance of schema.Resource
 func ResourceTerratestAWSS3Bucket() *schema.Resource {
 	return &schema.Resource{
 		Create: resourceTerratestAWSS3BucketCreate,
